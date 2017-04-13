@@ -1,5 +1,8 @@
 ---
 title: angular-$rootScope.$new()
+tags: 
+  - angular
+  - javascript
 ---
 ## Scope实例上面有这么一个属性：$new()
 ### $new(isolate, parent)

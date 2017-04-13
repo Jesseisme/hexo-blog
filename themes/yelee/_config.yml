@@ -40,12 +40,12 @@ since: 2016
 ## https://github.com/hexojs/hexo-generator-feed
 
 subnav:
-  Email: ""
+  Email: "lvsen6bu6@163.com"
   #新浪微博: "sina weibo"
-  GitHub: "#"
+  GitHub: "https://github.com/slipkinem"
   #V2EX: "#"
-  RSS: "/atom.xml"
-  #知乎: "zhihu"
+  #RSS: "/atom.xml"
+  知乎: "https://www.zhihu.com/people/lu-sen-8-82/activities"
   #豆瓣: "douban"
   #简书: "jianshu"
   #SegmentFault: ""
@@ -128,8 +128,8 @@ color_scheme:
 
 highlight_style:
   #on: true
-  inline_code: 1  # Value: 0 - 9 可选
-  code_block: 1  # Value: 0 - 4 
+  inline_code: 0  # Value: 0 - 9 可选
+  code_block: 0  # Value: 0 - 4
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式
