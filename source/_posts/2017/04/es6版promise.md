@@ -23,7 +23,8 @@ tags:
   (2) reject 失败的时候返回的数据 （拒绝承诺）
 #### ``Promise``原型方法
   (1) ``then``注册成功后的回调  
-  (2) ``catch``注册失败后的回调
+  (2) ``catch``注册失败后的回调  
+<!-- more -->
 #### 上源代码——由于使用es6所以用babel，[点击看编译过的代码](https://github.com/slipkinem/jsTest/blob/master/promise/final/promise.dist.js)
 ```$xslt
 class util {

@@ -18,9 +18,10 @@ tags:
       changeOrigin: true,
 
       onProxyRes(proxyRes, req, res) {
-        Array.prototype.slice.call(proxyRes.headers['set-cookie'] || '')  
+      proxyRes.headers['set-cookie'] = 
+        [].slice.call(proxyRes.headers['set-cookie'] || '')  
         .map(item => {
-          item = item.replace(/Path=\/.*?;/, 'Path=/;')
+          return item.replace(/Path=\/.*?;/, 'Path=/;')
         })
       }
 
@@ -51,10 +52,12 @@ Object.keys(proxyTable).forEach(ctx => {
       target: options,
       changeOrigin: true,
       onProxyRes(proxyRes, req, res) {
-        Array.prototype.slice.call(proxyRes.headers['set-cookie'] || '')  
-        .map(item => {
-          item = item.replace(/Path=\/.*?;/, 'Path=/;')
-        })
+        proxyRes.headers['set-cookie'] = 
+          [].slice.call(proxyRes.headers['set-cookie'] || '')  
+            .map(item => {
+              return item.replace(/Path=\/.*?;/, 'Path=/;')
+            })
+          }
       }
     }
   }
