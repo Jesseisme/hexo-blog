@@ -10,13 +10,13 @@ tags:
 # SSM整合流程
 ## spring spring-mvc mybatis maven
 ## web前端项目的源码[vue-admin](https://github.com/slipkinem/vue-admin)
-## 数据库的sql文件[vue_admin.sql](mind/vue_admin.sql)
+## 数据库的sql文件[vue_admin.sql](vue_admin.sql)
 
 ### IDE idea
 1. File => new Project => maven => create from archetype => **maven-archetype-webapp**  
-![界面预览](https://github.com/slipkinem/webContent/blob/master/mind/1.png)
+![1](1.png)
 2. 一直点击next直到finished，maven会自动创建一个项目目录  
-![2](https://github.com/slipkinem/webContent/blob/master/mind/2.png)
+![2](2.png)
   * 最终项目目录结构图  
 <!-- more -->
 ```$xslt
@@ -280,7 +280,7 @@ tags:
 </project>
 ```
 4. 配置mybatisGeneratorConfig，需要连接数据库，
-    将准备的sql文件导入数据库中[vue_admin.sql](mind/vue_admin.sql)  
+    将准备的sql文件导入数据库中[vue_admin.sql](vue_admin.sql)  
 generatorConfig.xml
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -494,9 +494,9 @@ public class UserController {
 ```
 
 11. 一个接口写好，然后配置服务器启动项目  
-  1.![3](https://github.com/slipkinem/webContent/blob/master/mind/3.png)  
-  2.![3](https://github.com/slipkinem/webContent/blob/master/mind/4.png)  
-  3.![3](https://github.com/slipkinem/webContent/blob/master/mind/5.png)  
+  1.![3](3.png)  
+  2.![4](4.png)  
+  3.![5](5.png)  
   然后点击**apply** => **OK**  
 项目启动，打开地址栏，追加输入**api/user/hello**，拿到数据OK，后台走通
 
