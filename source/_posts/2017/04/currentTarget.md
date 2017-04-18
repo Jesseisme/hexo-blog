@@ -2,6 +2,7 @@
 title: DOM属性currentTarget
 tags: 
   - javascript
+  - dom
 ---
 ```
 <html>
