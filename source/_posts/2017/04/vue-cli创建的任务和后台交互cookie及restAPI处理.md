@@ -16,7 +16,7 @@ tags:
     会将set-cookie返回给浏览器，浏览器自动存储在cookie中，  
     在tomcat中，此Cookie叫做JSESSIONID
   * session关键在于sessionID所以不用cookie存也是可以的，比如可以放在request param里面，只要需要时前台发过来就行
-  
+<!-- more -->
 #### 什么是cookie？
   * cookie是客户端（浏览器端）存储信息的一种方式，服务器可以设置浏览器set-cookie标头  
     浏览器收到标头与数值，会以文件的形式存在与计算机中。浏览器发送请求时会自动将cookie发给服务端 
