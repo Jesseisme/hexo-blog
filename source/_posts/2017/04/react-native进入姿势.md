@@ -173,8 +173,7 @@ adb（连接devices的驱动）可以通过模拟器和真机进行，android st
 ```
 
 修改``index.android.js``,给入口少搁点东西，不然看着恶心
-```jsx
-
+```jsx harmony
 import React, { Component } from 'react';
 import {
   AppRegistry
@@ -182,7 +181,7 @@ import {
 
 import RootApp from './app/RootApp'
 
-AppRegistry.registerComponent('Elm', () => RootApp);
+AppRegistry.registerComponent('rnDemo', () => RootApp); // rnDemo是项目的名称
 ```
 
 在根目录新建文件夹app，在app里面新建 RootApp.js、components/Home.js、components/Nice.js  
