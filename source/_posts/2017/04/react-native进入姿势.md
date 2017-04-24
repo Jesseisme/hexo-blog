@@ -4,7 +4,7 @@ date: 2017-04-22 11:34:51
 tags:
 ---
 ## 开始战斗
-``昨天准备学一点react，然后觉得不如直接学习react-native，就开始了react-native之路，从环境搭建到一个小DEMO，花了不少时间，主要是下载太麻烦``
+``准备学一点react，然后觉得不如直接学习react-native，就开始了react-native之路，从环境搭建到一个小DEMO，花了不少时间，主要是下载太麻烦``
 ### 准备工作
    1. ide: 我选择idea，习惯了
    2. 电脑：win7的i5渣配置，所以先不打算进行ios开发
@@ -125,7 +125,7 @@ allprojects{
 ```git
 > react-native run-android
 ```
-提示报错`` com.android.builder.testing.api.DeviceException: No connected devices!``, 由于没连上设备导致的
+提示报错`` com.android.builder.testing.api.DeviceException: No connected devices!``, 由于没连上设备导致的错误
 
 ### 连接设备
 adb（连接devices的驱动）可以通过模拟器和真机进行，android studio带的模拟器不怎么好用，所以我选择用强大的**genymotion**进行开发
@@ -137,11 +137,141 @@ adb（连接devices的驱动）可以通过模拟器和真机进行，android st
 ![gen](gen.jpg)
 4. 安装完毕，选择一个添加好的虚拟机，并启动。 糟糕，不知什么原因报错了。
 ![err](err.jpg)  
-碰到这种报错不用怕，打开virtualBox，直接启动安装好的虚拟机。  
+``碰到这种报错不用怕，打开virtualBox，直接启动安装好的虚拟机。``
 ![verr](verr.jpg)  
-可以看出来是virtualBox的配置有错误，那就打开配置信息  
+``可以看出来是virtualBox的配置有错误，那就打开配置信息 `` 
 ![configerr](configerr.jpg)  
-跟随提示配置好virtualBox,继续启动在genymotion里面添加的设备，完美!  
+``跟随黄色提示配置好virtualBox,继续启动在genymotion里面添加的设备，完美! `` 
 ![success](success.jpg)  
+5. 在genymotion里面配置sdk路径
+![sdk](sdk.png)
+6. 如果还是提示连接不上设备，就用adb连接一下
+```$xslt
+> adb devices
+> adb connect 127.0.0.1
+> adb devices
+```
 
-#### 
+## 开始开发
+
+1. 各种配置都设置好了，继续运行``react-native run-android``
+2. 尼玛又是error,这次明显的看出提示没有连接上js Service,得手动连接了    
+![netErr](netErr.jpg)  
+``点击菜单 -> Dev Setting -> Debug server host``
+![dev](dev.jpg)  
+![host](host.jpg)    
+``然后返回，reload一下``
+![reload](reload.jpg)  
+``出现成功界面，可以愉快的开发了``  
+![devSuccess](devSuccess.jpg)  
+**注意：在菜单里面点击 Enable Hot Reloading，这样就可以保存后实时刷新了**
+
+### 正式开发，就写一个简单的底部导航路由
+用到底部导航package [react-native-tab-navigator](https://github.com/expo/react-native-tab-navigator)
+```$xslt
+> yarn add react-native-tab-navigator
+```
+
+修改``index.android.js``,给入口少搁点东西，不然看着恶心
+```jsx
+
+import React, { Component } from 'react';
+import {
+  AppRegistry
+} from 'react-native';
+
+import RootApp from './app/RootApp'
+
+AppRegistry.registerComponent('Elm', () => RootApp);
+```
+
+在根目录新建文件夹app，在app里面新建 RootApp.js、components/Home.js、components/Nice.js  
+
+app/RootApp.js
+```jsx harmony
+import React, {Component} from 'react'
+import {
+  View,
+  StyleSheet
+} from 'react-native'
+import TabNavigator from 'react-native-tab-navigator'
+import Home from './components/Home'
+import Nice from './components/Nice'
+import TabNavigatorItem from "react-native-tab-navigator/TabNavigatorItem";
+
+export default class RootApp extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      selectedTab: 'home'
+    }
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <TabNavigator>
+          <TabNavigatorItem
+            title="Home"
+            onPress={() => this.setState({selectedTab: 'home'})}
+            selected={this.state.selectedTab === 'home'}>
+            <Home/>
+          </TabNavigatorItem>
+          <TabNavigatorItem
+            title="Nice"
+            onPress={() => this.setState({selectedTab: 'nice'})}
+            selected={this.state.selectedTab === 'nice'}>
+            <Nice/>
+          </TabNavigatorItem>
+        </TabNavigator>
+      </View>
+    )
+  }
+}
+
+let styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#ccc'
+  }
+});
+```
+
+app/components/Home.js
+```jsx harmony
+import React, {Component} from 'react'
+import {
+  Text
+} from 'react-native'
+
+export default class Home extends Component {
+  render() {
+    return (
+      <Text>
+        我是Home
+      </Text>
+    )
+  }
+}
+```
+
+app/components/Nice.js
+```jsx harmony
+import React, {Component} from 'react'
+import {
+  Text
+} from 'react-native'
+
+export default class Nice extends Component {
+  render() {
+    return (
+      <Text>
+        我是Nice
+      </Text>
+    )
+  }
+}
+```
+
+大功告成  
+![bigSuccess](bigSuccess.jpg)
