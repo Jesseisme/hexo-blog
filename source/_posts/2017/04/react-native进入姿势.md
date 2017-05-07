@@ -1,7 +1,10 @@
 ---
 title: react-native进入姿势
 date: 2017-04-22 11:34:51
+categories: 自学历程
 tags:
+  - javascript
+  - reactNative
 ---
 ## 开始战斗
 ``准备学一点react，然后觉得不如直接学习react-native，就开始了react-native之路，从环境搭建到一个小DEMO，花了不少时间，主要是下载太麻烦``

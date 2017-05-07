@@ -1,6 +1,7 @@
 ---
 title: es6版promise
 categories: 小轮子
+date: 2017-04-18 10:34:21
 tags: 
   - javascript
   - es6

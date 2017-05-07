@@ -1,5 +1,6 @@
 ---
 title: DOM属性currentTarget
+date: 2017-04-19 15:18:24
 tags: 
   - javascript
   - dom

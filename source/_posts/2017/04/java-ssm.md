@@ -1,6 +1,7 @@
 ---
 title: java SSM和vue整合
 categories: 课外学习
+date: 2017-04-25 14:18:45
 tags:
   - java
   - ssm
@@ -9,8 +10,8 @@ tags:
 
 # SSM整合流程
 ## spring spring-mvc mybatis maven
-## web前端项目的源码[vue-admin](https://github.com/slipkinem/vue-admin)
-## 数据库的sql文件[vue_admin.sql](vue_admin.sql)
+ * web前端项目的源码[vue-admin](https://github.com/slipkinem/vue-admin)
+ * 数据库的sql文件[vue_admin.sql](vue_admin.sql)
 
 ### IDE idea
 1. File => new Project => maven => create from archetype => **maven-archetype-webapp**  

@@ -1,6 +1,7 @@
 ---
 title: angular权威指南笔记
 categories: 课外学习
+date: 2017-04-14 18:37:59
 tags:
   - angular
   - javascript
@@ -11,6 +12,7 @@ tags:
 
 2. orderBy——排序：给显示的文本排序
 
+<!-- more -->
 3. ``$parsers``  
    当用户同控制器进行交互，并且``ngModelController``  
    中的``$setViewValue()``方法被调用时，
@@ -40,7 +42,7 @@ tags:
        };
      });
    ```
-   <!-- more -->
+
 4. **$formatters**
   当绑定的``ngModel``值发生了变化，并经过``$parsers``  
   数组中解析器的处理后，这个值会被传递

@@ -1,6 +1,7 @@
 ---
 title: java用jdbc，servelet的一个小问题
 categories: exception
+date: 2017-04-21 10:14:19
 tags:
   - java
 ---
