@@ -6,7 +6,8 @@
     "version": "3.3.5"
   },
   "scripts": {
-    "start": "hexo clean && hexo s"
+    "start": "hexo clean && hexo s",
+    "deploye": "hexo clean && hexo generate && hexo deploy"
   },
   "dependencies": {
     "hexo": "^3.3.1",
