@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.3.5"
+    "version": "3.3.1"
   },
   "scripts": {
     "start": "hexo clean && hexo s",
-    "deploye": "hexo clean && hexo generate && hexo deploy"
+    "d": "hexo clean && hexo generate && hexo deploy"
   },
   "dependencies": {
     "hexo": "^3.3.1",
