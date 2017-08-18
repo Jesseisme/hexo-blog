@@ -54,10 +54,11 @@ tags:
     3. ...
 2. 对于js或者css文我们一般会选择进行缓存，如果要更新的话，只需要将引入的js文件写上版本号
 ```html
-<script src="xxx?v=0.2"></script>```
+<script src="xxx?v=0.2"></script>
+```
 最好的方式是给文件加上hash或md5值，对于改变了的文件更改hash，这样就能更新网站了。webpack,gulp等工具都能实现。thx
 
-### 上博客中比较流行的缓存流程图
+## 博客中比较流行的缓存流程图
 ![liucheng.png](liucheng.png)  
 
 **cache-control**  
