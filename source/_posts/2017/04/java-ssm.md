@@ -20,7 +20,7 @@ tags:
 ![2](2.png)
   * 最终项目目录结构图  
 <!-- more -->
-```$xslt
+```
 │  .gitignore
 │  pom.xml
 │  README.md
@@ -473,7 +473,7 @@ jdbc.password=**
 
 10. 在controller里面新建一个UserController类，  
 进行restAPI的书写,api使用url: **api/user/hello**
-```$xslt
+```
 @Controller
 @RequestMapping("api/user")
 public class UserController {
