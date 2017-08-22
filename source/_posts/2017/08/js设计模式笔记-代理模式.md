@@ -12,4 +12,4 @@ tags:
  * jsonp 创建script标签获取数据，不能post
  * iframe 通过iframe拿数据，写起来麻烦，还很弱
  * nginx或者其他服务器进行跨域，或者设置http cors
- *... 其他
+ * ... 其他
