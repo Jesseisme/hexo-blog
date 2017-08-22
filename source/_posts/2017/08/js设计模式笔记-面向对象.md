@@ -12,7 +12,6 @@ tags:
   * 封装（就是将私有变量方法封装，高内聚低耦合）
   * 继承（子类继承父类），即一个类继承另一个类的属性和方法
   * 多态（根据函数的参数等不一样的状态，构成不一样的方法）
-
 ```flow js
 'use strict'
 let log = console.log.bind(console)
