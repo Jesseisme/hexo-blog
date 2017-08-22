@@ -12,7 +12,7 @@ tags:
 
 <!-- more -->
 
-```flow js
+```
 // util
 function inheritObject (o) {
   function F () {

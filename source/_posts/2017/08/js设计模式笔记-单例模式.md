@@ -9,7 +9,7 @@ tags:
 ## 单例模式
 * 只能实例化一次，第二次实例化将之前实例化好的对象返回，就可以共享实例的内存，可用于modal弹框
 
-```flow js
+```
 'use strict'
 var single = (function () {
   var instance = null

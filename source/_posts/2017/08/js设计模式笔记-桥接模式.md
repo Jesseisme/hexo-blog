@@ -11,7 +11,7 @@ tags:
   * 将一个函数或者类当做一个桥梁，提取公共部分，将实现和抽象通过桥接的方法链接在一起
   * 针对多维度变化，可以创建许多个桥梁
   
-```flow js
+```
 'use strict'
 let log = console.log.bind(console)
 function Speed (x, y) {

@@ -14,7 +14,7 @@ tags:
 3. 抽象工程模式
   * 父类不提供实体方法，只提供接口，通过子类去实现覆盖
 
-```flow js
+```
 'use strict'
 const log = console.log.bind(console)
 

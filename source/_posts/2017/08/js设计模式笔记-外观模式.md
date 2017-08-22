@@ -8,7 +8,7 @@ tags:
 ## 外观模式
 *  这章坑爹，就是说了下兼容性的封装，在写个小小型代码库
 
-```flow js
+```
 'use strict'
 var A = (function () {
   var o = {

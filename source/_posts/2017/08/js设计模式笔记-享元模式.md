@@ -19,7 +19,7 @@ tags:
 
 <!-- more -->
 
-```flow js
+```
 ~function () {
   'use strict'
   var Flywight = function () {

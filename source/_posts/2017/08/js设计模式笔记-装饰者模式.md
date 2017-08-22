@@ -7,7 +7,7 @@ tags:
 ---
 ##装饰者模式
 * 不改变原对象的基础上，通过添加属性或方法使原对象满足要求
-```flow js
+```
 'use strict'
 // 装饰者
 var decorator = (function () {

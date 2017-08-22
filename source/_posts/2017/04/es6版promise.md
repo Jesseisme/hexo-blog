@@ -27,7 +27,7 @@ tags:
   (2) ``catch``注册失败后的回调  
 <!-- more -->
 #### 上源代码——由于使用es6所以用babel，[点击看编译过的代码](https://github.com/slipkinem/jsTest/blob/master/promise/final/promise.dist.js)
-```$xslt
+```
 class util {
   static isFunction(value) {
     return typeof value === 'function'
