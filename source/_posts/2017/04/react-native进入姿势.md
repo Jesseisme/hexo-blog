@@ -171,12 +171,12 @@ adb（连接devices的驱动）可以通过模拟器和真机进行，android st
 
 ### 正式开发，就写一个简单的底部导航路由
 用到底部导航package [react-native-tab-navigator](https://github.com/expo/react-native-tab-navigator)
-```$xslt
+```bash
 > yarn add react-native-tab-navigator
 ```
 
 修改``index.android.js``,给入口少搁点东西，不然看着恶心
-```jsx harmony
+```js
 import React, { Component } from 'react';
 import {
   AppRegistry
@@ -190,7 +190,7 @@ AppRegistry.registerComponent('rnDemo', () => RootApp); // rnDemo是项目的名
 在根目录新建文件夹app，在app里面新建 RootApp.js、components/Home.js、components/Nice.js  
 
 app/RootApp.js
-```jsx harmony
+```js
 import React, {Component} from 'react'
 import {
   View,
@@ -240,7 +240,7 @@ let styles = StyleSheet.create({
 ```
 
 app/components/Home.js
-```jsx harmony
+```js
 import React, {Component} from 'react'
 import {
   Text
@@ -258,7 +258,7 @@ export default class Home extends Component {
 ```
 
 app/components/Nice.js
-```jsx harmony
+```js
 import React, {Component} from 'react'
 import {
   Text
