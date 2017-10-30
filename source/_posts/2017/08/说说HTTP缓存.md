@@ -45,7 +45,7 @@ tags:
 ![disk](disk.png)  
 可以看到**from memory cache**是不需要时间的0ms，而memory需要时间。  
 哈哈很简单，就是一个存在disk（磁盘中），一个存在memory(内存)中，存在磁盘需要读取时间。  
-图片之类资源较大，存于磁盘，js.css文件较小也比较重要，存于内存，参考链接[memoryCache和diskCache流程详解](http://blog.csdn.net/m632587166/article/details/50732205?locationNum=14)
+存在磁盘中，退出浏览器资源还会存在，存在memory中关闭浏览器进程就会清除缓存。参考链接[memoryCache和diskCache流程详解](http://blog.csdn.net/m632587166/article/details/50732205?locationNum=14)
 
 ### 都特么几乎是后台控制的缓存，那前端呢？
 1. html页面配置no-cache,html ``<meta>``标签中有个叫做http-equiv的属性，就是设置http头信息，关键字等等

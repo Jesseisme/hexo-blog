@@ -17,6 +17,8 @@ tags:
 ### 效果图
 ![navigation](navigation.png)
 
+<!-- more -->
+
 ### 功能
 1. 点击左侧显示toolbar nav
 2. 通过toolbar 切换路由，并保持之前缓存
