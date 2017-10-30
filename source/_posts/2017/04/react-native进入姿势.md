@@ -7,7 +7,8 @@ tags:
   - reactNative
 ---
 ## 开始战斗
-``准备学一点react，然后觉得不如直接学习react-native，就开始了react-native之路，从环境搭建到一个小DEMO，花了不少时间，主要是下载太麻烦``
+从react到react native, 已经走过许多时间。react native是一个高性能的用javascript开发app的框架。  
+准备学一点react，然后觉得不如直接学习react-native，就开始了react-native之路，从环境搭建到一个小DEMO，花了不少时间，主要是下载太麻烦
 ### 准备工作
    1. ide: 我选择idea，习惯了
    2. 电脑：win7的i5渣配置，所以先不打算进行ios开发
@@ -39,14 +40,14 @@ tags:
 
 ### react-native安装
   1. 使用yarn下载react-native-cli
-```$xslt
+```bash
 > yarn global add react-native-cli
 > react-native --version
 ```
 
   2. 创建项目,一直等待下载完成，生成的目录还是很清晰的
-```$xslt
-> yarn-native init rnDemo 
+```bash
+> react-native init rnDemo 
 ```
 
   ![directory](directory.jpg)
