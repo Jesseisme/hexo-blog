@@ -6,4 +6,4 @@ tags:
   - javascript
 ---
 
-##Demo [Demo就在这里](http://faceplus.top/jsTest/)
+##Demo [Demo就在这里](http://demos.faceplus.top)
