@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.6.0"
+    "version": "3.7.1"
   },
   "scripts": {
     "start": "hexo clean && hexo s",
     "d": "hexo clean && hexo generate && hexo deploy"
   },
   "dependencies": {
-    "hexo": "^3.3.1",
+    "hexo": "^3.7.1",
     "hexo-asset-image": "0.0.3",
     "hexo-deployer-git": "^0.2.0",
     "hexo-generator-archive": "^0.1.4",
